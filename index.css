@@ -1,0 +1,237 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+html {
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#topgg{
+  float: right;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 1501;
+    background: rgb(0, 0, 0);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 799ms cubic-bezier(.74,.215,.125,1);
+    -webkit-transition: all 799ms cubic-bezier(.74,.215,.125,1.02);
+    -moz-transition: all 799ms cubic-bezier(.74,.215,.125,1.02);
+    -o-transition: all 799ms cubic-bezier(.74,.215,.125,1.02);
+    transition: all 799ms cubic-bezier(.74,.215,.125,1.02);
+    -webkit-transition-timing-function: cubic-bezier(.74,.215,.125,1);
+    -webkit-transition-timing-function: cubic-bezier(.74,.215,.125,1.02);
+    -moz-transition-timing-function: cubic-bezier(.74,.215,.125,1.02);
+    -o-transition-timing-function: cubic-bezier(.74,.215,.125,1.02);
+    transition-timing-function: cubic-bezier(.74,.215,.125,1.02);
+    transition-delay: .06s;
+}
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: rgb(119, 118, 118);
+    z-index: 1501;
+}
+#header-name {
+    transform: rotate(-90deg);
+    margin-top: 40px;
+    font-size: 25px;;
+    color: white;
+
+}
+
+#header-socials {
+    size: 100px;
+    font-size: 75px;
+    bottom: 230px;
+    left: 25px;
+    width: 40px;
+    text-align: center;
+    z-index: 2000;
+    position: absolute;
+    overflow: hidden;
+    padding-inline-start: 0px;
+}
+#maincontent {
+    position: relative;
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    overflow: hidden;
+	background: linear-gradient(-45deg, #ffffff, #7a7a7a, #f1f1f1);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    position:fixed;
+    left: 0;;
+    
+    text-align: left;
+    top:0;
+    
+    
+    width: 100%;
+    height: 100%;
+}
+
+#top {
+  padding: 30px;
+  padding-left: 50px;;
+  padding-right: 1500px;
+  max-width: 1500px;
+  margin: 0;
+  border-right: 0;
+  display: inline-block;
+}
+#bottom {
+  display: inline-block;
+  padding-left: 50px;;
+}
+.selectheader{
+  text-align: right;
+  padding: 10px;
+  display: inline-block;
+  float:right;
+  padding-right: 125px;
+
+  
+}
+
+button {
+  background-color: #1a1a1a25; /* Green */
+  border: 1px solid #000000;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#changeable {
+  opacity: 0;
+  transition: 0.7s opacity;
+}
+#aboutmemain {
+  opacity: 0;
+  transition: 0.7s opacity;
+  display: none;
+}
+
+
+
+.discord{
+    list-style-image: url("https://discord.com/assets/1c8a54f25d101bdc607cec7228247a9a.svg");
+}
+.github{
+    list-style-image: url("github.png");
+    width: 10%;
+}
+
+#abouttext{
+  padding: 30px;
+  padding-left: 50px;;
+  padding-right: 50%;
+
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#projects{
+    padding-top: 150px;
+    border-radius: 25px;
+    bottom: 50px;
+    size: 10px;
+    padding-left: 15px;;
+    list-style-type: none;
+}
+
+#proj{
+  font-size: 25px;
+  list-style-type: none;
+}
+
+#FaceITBot{
+  padding-bottom: 50px;
+}
+
+#projimg{
+  opacity: 0;
+  transition: 0.7s opacity;
+  
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+#faceitcc{
+  opacity: 0;
+  transition: 0.7s opacity;
+  float: right;
+  left: 46%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: .05px solid #000000;  padding: 25px;
+  background-color: #1a1a1a05;
+  display: none;
+
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+#projimg img{
+  border: orange;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  padding-left: 2.5rem;
+  font-size: 30px;
+}
+footer i{
+  padding-right: 10px;
+}
+
+#copy{
+  font-size: 10px;
+  display: none;
+}
+footer:hover #copy{
+  display: inline;
+}
